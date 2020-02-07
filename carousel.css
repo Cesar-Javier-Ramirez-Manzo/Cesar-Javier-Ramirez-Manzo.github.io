@@ -1,0 +1,20 @@
+#imagen{
+    height: 300px;
+    width: 500px;
+}
+#v{
+    display: none;
+}
+#container{
+    flex: auto;
+    text-align: center;
+}
+.bu{
+    text-decoration: aliceblue;
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+    background-color: aqua;
+    border-radius: 6px;
+    border: 2px solid purple;
+}
