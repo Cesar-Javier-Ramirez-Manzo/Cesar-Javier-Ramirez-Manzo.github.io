@@ -12,6 +12,10 @@ function Next() {
     var image = document.getElementById("imagen")
     image.src = cont + ".png"
 
+    clearInterval(int)
+    int=setInterval(It,3000)
+
+
 }
 
 
@@ -26,7 +30,8 @@ function Prev() {
     var image = document.getElementById("imagen")
     image.src = cont + ".png"
 
-
+    clearInterval(int)
+    int=setInterval(It,3000)
 }
 
 function It() {
