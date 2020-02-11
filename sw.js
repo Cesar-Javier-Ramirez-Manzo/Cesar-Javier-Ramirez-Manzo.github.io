@@ -41,11 +41,10 @@ self.addEventListener('activate',e=>{
 self.addEventListener('fetch',e=>{
     e.respondWith(
         caches.match(e.request)
-        .then(res=>{
-            if(res){
-                return res
-            }
-            return fetch(e.request)
-        })
-    )
-})
+        .then(function(res) {
+            return res || fetch(e.request).then(function(response) {
+              return caches.open('carrusel_cache').then(function(cache) {
+                cache.put(e.request, response.clone());
+                return response;})
+              })
+  }))})
