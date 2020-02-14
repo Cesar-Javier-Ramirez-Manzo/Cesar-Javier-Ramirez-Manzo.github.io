@@ -102,10 +102,12 @@ array2.push(arr)
 localStorage.setItem("keys",JSON.stringify(array))
 
 localStorage.setItem("array",JSON.stringify(array2))
+Charge()
 }
 
 function Charge(){
     var table = document.getElementById("tabla");
+    table.innerHTML=''
     var back=localStorage.getItem("keys")
     var obj=JSON.parse(back)
     for (var element in obj){
@@ -148,7 +150,7 @@ function remove(){
         }
     }
     localStorage.setItem("array",JSON.stringify(array2) )
-    location.reload()
+    Charge()
 }
 
 
