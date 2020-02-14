@@ -9,15 +9,56 @@
     <link rel="shortcut icon" href="./square.png">
 </head>
 
-<body >
+<body onload="Charge()" >
     <div id="container">
         <input type="button" value="<--" onclick="Prev()" class="bu">
         <img src="./1.png" alt="Image" id="imagen">
         <input type="button" value="-->" onclick="Next()" class="bu">
 
+    </div>
+    <div style="border: 1px black solid;" >
+        <div>
+            <h1>Llenado de datos</h1>
+            <form action="" method="get">
+                <p>Id: <input type="number" name="id" id="id"></p>
+                <p>Nombre: <input type="text" name="Nombre" size="40" id="name"></p>
+                <p>Edad: <input type="text" name="Edad" id="age"></p>
+                <p>Ciudad: <input type="text" name="Ciudad" id="city"></p>
+                <p>Telefono: <input type="text" size="10" id="tel"> </p>
+                <p>Pago: <input type="text" name="Pago" size="10" id="pay"></p>
+                <input type="button" value="Guardar" id="btn" onclick="Add()">
+                
+            </form> 
+            <button onclick="location.reload()">Cargar lista</button>
+            <h1>Borrado</h1>
+            <p>Id de elemento a borrar <input type="number" id="borrar"></p>
+            <input type="button" value="Borrar" onclick="remove()">
+        </div>
+        
 
+        <div>
+            <table id="table"style="width: 100%; text-align: center;border:">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Ciudad</th>
+                        <th>Telefono</th>
+                        <th>Pago</th>
+                        <th>Id</th>
 
+                    </tr>
+                    
 
+                </thead>
+                <tbody id="tabla" >
+                    
+                </tbody>
+            </table>
+            <table  style="width: 100;">
+
+            </table>
+        </div>
     </div>
 </body>
 
