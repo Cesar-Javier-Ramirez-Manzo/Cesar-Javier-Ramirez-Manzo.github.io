@@ -10,7 +10,9 @@ urlToCache=[
     './4.png',
     './5.png',
     './square.png',
-    './star.png'
+    './star.png',
+    './jquery-3.4.1.min.js'
+
 ]
 
 self.addEventListener('install',e=>{
