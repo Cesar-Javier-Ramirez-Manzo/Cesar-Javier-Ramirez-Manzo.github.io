@@ -1,7 +1,7 @@
 if('serviceWorker' in navigator){
-    navigator.serviceWorker.register('./sw.js');
-    .then(ref=>console.log('Exito',reg));
-    .catch(err=>console.warn('Error'));
+    navigator.serviceWorker.register('./sw.js')
+    .then(ref=>console.log('Exito',reg))
+    .catch(err=>console.warn('Error'))
 }
 var cont = 1;
 var whi = true;
@@ -137,6 +137,9 @@ function charge(){
         localStorage.setItem("array",JSON.stringify(array2) );
         charge();
     }
+
+
+
 
 
 
