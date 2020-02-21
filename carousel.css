@@ -5,10 +5,7 @@
 #v{
     display: none;
 }
-#container{
-    flex: auto;
-    text-align: center;
-}
+
 .bu{
     text-decoration: aliceblue;
     padding: 10px;
@@ -20,4 +17,42 @@
 }
 #table{
     border: 1px black solid;
+}
+table{
+    table-layout: fixed;
+    text-align: center;
+    border: 1px black solid;
+    background: aqua ;
+    width: 100%
+
+}
+*{
+    
+    margin: 0;
+    padding: 0%;
+}
+
+
+.container{
+text-align: center;   
+padding: inherit; 
+flex: content;
+
+
+}
+input[type= button]{
+    color: white;
+    font-size: medium;
+    padding: 10px;
+    background-color:#1BADCF;
+    
+}
+input[type= button]:hover{
+    width: 100px;
+    transition: 2000ms;
+    color: white;
+    font-size: medium;
+    padding: 10px;
+    background-color:#1BADCF;
+    
 }
