@@ -11,7 +11,8 @@ urlToCache=[
     './5.png',
     './square.png',
     './star.png',
-    './jquery-3.4.1.min.js'
+    './jquery-3.4.1.min.js',
+    './pure-release-1.0.1'
 
 ]
 
