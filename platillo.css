@@ -1,0 +1,67 @@
+body{
+    background-image: url("https://static4.depositphotos.com/1001004/345/i/600/depositphotos_3451785-stock-photo-vintage-background-with-lacy-border.jpg");
+    background-repeat: repeat;
+}
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+
+.title{
+    font-weight: bold;
+    font-size: xx-large;
+    flex: content;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url("https://images.vexels.com/media/users/3/141981/isolated/lists/79bcfc27887f8a1e7198406fd542f1df-etiqueta-retro-cinta-morada.png");
+}
+
+.summary{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.imagen{
+    flex-flow: wrap;
+    width: 250px;
+    height: 250px;
+    margin: 100px;
+    border: black;
+    border-radius: 15%;
+}
+
+.contenido{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.description{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.ingredients{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.price{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
